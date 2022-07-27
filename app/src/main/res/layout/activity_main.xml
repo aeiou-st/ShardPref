@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="50dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Your Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:onClick="SaveDataToPreference"
+            android:textSize="20sp"
+            android:text="Save"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:cornerRadius="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Tv1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Tv2"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:onClick="showDataFromPreference"
+                android:textSize="20sp"
+                android:text="View"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                app:cornerRadius="15dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:onClick="clearDataFromPreference"
+                android:textSize="20sp"
+                android:text="Clear"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                app:cornerRadius="15dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
